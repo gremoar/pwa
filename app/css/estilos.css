@@ -1,0 +1,149 @@
+body {
+    background-color: #72c7e7;
+}
+
+.bg1 {
+    background-color: #b9e3f3;
+}
+
+.bg2 {
+    background-color: white;
+}
+
+.bg-header, nav {
+    background-color: #de3831;
+}
+
+#logo {
+    width: 134px;
+    height: 50px;
+    font-size: 0;
+    background: url("../imagenes/logo.png");
+    margin: auto;
+}
+
+#info {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: rgba(255, 255, 255, .7);
+}
+
+/* Tuneamos la barra de navegación pisando las clases del framework para que los botones ocupen todo el ancho del viewport repartiendo es tamaño en partes iguales. */
+
+.navbar-nav {
+    width: 100%;
+    background: none;
+    flex-wrap: nowrap;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar > .container-fluid {
+    padding: 0;
+}
+
+/* Repartimos el ancho de los botones en partes iguales. */
+
+.nav-item {
+    flex: 1;
+    padding: 0;
+    display: flex;
+}
+
+.nav-link {
+    background-color: none;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, .5);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5rem;
+}
+
+/* Desplazamos el ancla hacia arriba (el span vacío que no ocupa lugar en la pantalla) la misma distancia que tiene de alto el header, de este modo al navegar el ancla no queda el contenido pegado en el top de la ventana sino que queda el ancla y, por lo tanto, el header es el que queda en el top. */
+
+.ancla {
+    position: relative;
+    top: -4.5rem;
+}
+
+/* A las secciones les aplicamos un margin-bottom del alto del navbar fijo en la parte inferior del viewport para que el contenido no quede tapado.
+
+Para resolver la navegabilidad de la app, ponemos a todas las secciones (vistas de la app) en display none, de ese modo todo el contendido del html excepto el header y el nav estará oculto. */
+
+section {
+    display: none;
+    margin-bottom: 3.5rem;
+}
+
+/* Ahora seleccionamos a la última sección que es la primera vista de la app (lo que sería la home) y le aplicamos display block para que sea la única visible. */
+
+section:last-of-type {
+    display: block;
+}
+
+/* Cuando presionamos un botón de la barra de navegación entra en target el span que tiene ese id. Los span están ubicados por fuera de la section correspondiente y antes que ella. 
+
+Por lo tanto, cuando cualquiera de estos span entran en target seleccionamos a todas las secciones hermanas y las ponemos display none (ocultamos de nuevo todo el contenido de la app ya que no sabemos cual de las vistas estaba visible al momento de navegar a otra vista). */
+
+#personajes:target ~ section, #pelicula:target ~ section, #temporada:target ~ section {
+    display: none;
+}
+
+/* Y por último, seleccionamos solo la section hermana adyacente al span en target y la ponemos display block ya que cada span tiene a continuación la section que tiene el contenido de esa vista a la que el usuario está queriendo navegar.
+
+De este modo siempre estará en display block solo la section que se esté navegando en ese momento cuando el span correspondiente está en target y al cargar la app, solo visible la última section. */
+
+span:target + section {
+    display: block !important;
+}
+
+.bg-titulo {
+    padding: 0 1.5rem;
+    color: rgba(255, 255, 255, .8);
+    margin-bottom: 1.5rem;
+    position: relative;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding-left: 90px;
+    line-height: 4.3rem;
+    border-bottom: 8px solid rgba(0, 0, 0, 0.4);
+}
+
+section:nth-last-of-type(1) .bg-titulo {
+    background: url("../imagenes/icono_historia.png") no-repeat 1rem center rgba(0, 0, 0, .7);
+}
+
+section:nth-last-of-type(2) .bg-titulo {
+    background: url("../imagenes/icono_personajes.png") no-repeat 1rem center rgba(0, 0, 0, .7);
+}
+
+section:nth-last-of-type(3) .bg-titulo {
+    background: url("../imagenes/icono_pelicula.png") no-repeat 1rem center rgba(0, 0, 0, .7);
+}
+section:nth-last-of-type(4) .bg-titulo {
+    background: url("../imagenes/icono_temporada.png") no-repeat 1rem center rgba(0, 0, 0, .7);
+}
+
+#datos .modal-body {
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+#datos .modal-header {
+    border: none;
+}
+
+#datos .btn-close {
+    background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+    border: 0;
+}
+
+#datos ul {
+    list-style: none;
+    text-align: center;
+}
