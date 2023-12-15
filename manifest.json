@@ -1,14 +1,13 @@
 {
- "name": "La App de los Simpson",
- "short_name": "Los Simpson",
+ "name": "Melius",
  "background_color": "#ffff00",
- "description": "Es una app de Los Simpson con fines académicos.",
+ "description": "Es una app con fines académicos.",
  "display": "standalone",
  "lang": "es",
  "dir": "ltr",
- "id": "ejemplo/pwa",
+ "id": "https://gremoar.github.io/pwa/",
  "orientation": "portrait",
- "start_url": "/https://gremoar.github.io/pwa/",
+ "start_url": "/app/",
  "scope": "/app/",
  "theme_color": "#ff0000",
  "icons": [
