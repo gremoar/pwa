@@ -1,11 +1,12 @@
+
 {
-    "name": "Melius",
-    "background_color": "#ffff00",
+    "name": "Melius", 
+     "background-color":"#691b18",
     "description": "Es una app con fines académicos.",
     "display": "standalone",
     "lang": "es",
     "dir": "ltr",
-    "id": "ejemplo/pwa",
+    "id": "pwa",
     "orientation": "portrait",
     "start_url": "https://gremoar.github.io/pwa/app/index.html",
     "scope": "/app/",
