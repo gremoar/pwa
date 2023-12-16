@@ -1,3 +1,4 @@
+
 body {
     background-color: #FCF6DB;
     font-family: 'Playfair Display', serif;
@@ -22,8 +23,6 @@ body {
     background-image: url("../imagenes/bg1.png");
     background-repeat: no-repeat;
     height: 827px;
-    margin: 0 auto;
-    width: 100%;
 
 }
 .act{
@@ -175,6 +174,40 @@ strong{
 
 
 }
+@media (max-width: 524px){
+
+body{
+  width: 525px;
+}
+.img1{
+    height: 350px;
+    padding-left: 170px;
+}
+
+.img2{
+    height: 400px;
+    padding-left: 120px;
+}
+
+.act{
+    background-image: url("../imagenes/bg2\ min.png");
+    background-repeat: no-repeat;
+    height: 827px;
+}
+
+.active{
+    background-image: url("../imagenes/bg3\ min.png");
+    background-repeat: no-repeat;
+    
+}
+
+.comidas{
+    background-image: url("../imagenes/bg4\ min.png");
+    background-repeat: no-repeat;
+    
+}
+}
+
 .navbar-toggler {
     border: none;
 }
