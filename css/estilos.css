@@ -118,7 +118,63 @@ strong{
         
     }
 }
+@media (max-width: 1080px){
 
+    .img1{
+        height: 400px;
+        padding-left: 300px;
+    }
+
+    .img2{
+        height: 400px;
+        padding-left: 200px;
+    }
+
+    .texto1 h1{
+        font-size: 100px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .texto1 h2{
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .texto1 p{
+        font-size: 150px;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .texto2 h1{
+        font-size: 70px;
+        white-space: nowrap;
+        text-align: center;
+    }
+    .texto2 h2{
+        font-size: 30px;
+        margin-left: 130px;
+        margin: 0;
+    }
+   .card-size {
+    max-width: 50%;
+   }
+}
+@media (max-width: 615px){
+
+    .img1{
+        height: 350px;
+        padding-left: 220px;
+    }
+
+    .img2{
+        height: 350px;
+        padding-left: 200px;
+    }
+
+
+}
 .navbar-toggler {
     border: none;
 }
