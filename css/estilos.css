@@ -1,5 +1,6 @@
 body {
-    background-color: #72c7e7;
+    background-color: #FCF6DB;
+    font-family: 'Playfair Display', serif;
 }
 
 .bg1 {
@@ -14,7 +15,29 @@ body {
     background-color: #de3831;
 }
 
+.img1{
+    height: 372px;
+}
 
+.present{
+    background-image: url("../imagenes/bg1.png");
+}
+
+.act{
+    background-image: url("../imagenes/bg2.png");
+}
+
+.active{
+    background-image: url("../imagenes/bg3.png");
+}
+
+.comidas{
+    background-image: url("../imagenes/bg4.png");
+}
+
+.contact{
+    background-image: url("../imagenes/bg5.png");
+}
 
 #logo {
     width: 134px;

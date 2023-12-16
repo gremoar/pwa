@@ -29,7 +29,8 @@ body {
     color: rgba(255, 255, 255, .7);
 }
 
-/* Tuneamos la barra de navegación pisando las clases del framework para que los botones ocupen todo el ancho del viewport repartiendo es tamaño en partes iguales. */
+/* Tuneamos la barra de navegación pisando las clases del framework para que los botones ocupen todo el ancho del viewport 
+repartiendo es tamaño en partes iguales. */
 
 .navbar-nav {
     width: 100%;
@@ -64,39 +65,49 @@ body {
     height: 3.5rem;
 }
 
-/* Desplazamos el ancla hacia arriba (el span vacío que no ocupa lugar en la pantalla) la misma distancia que tiene de alto el header, de este modo al navegar el ancla no queda el contenido pegado en el top de la ventana sino que queda el ancla y, por lo tanto, el header es el que queda en el top. */
+/* Desplazamos el ancla hacia arriba (el span vacío que no ocupa lugar en la pantalla) la misma distancia que tiene de alto el 
+header, de este modo al navegar el ancla no queda el contenido pegado en el top de la ventana sino que queda el ancla y, por lo 
+tanto, el header es el que queda en el top. */
 
 .ancla {
     position: relative;
     top: -4.5rem;
 }
 
-/* A las secciones les aplicamos un margin-bottom del alto del navbar fijo en la parte inferior del viewport para que el contenido no quede tapado.
+/* A las secciones les aplicamos un margin-bottom del alto del navbar fijo en la parte inferior del viewport para que el contenido no
+quede tapado.
 
-Para resolver la navegabilidad de la app, ponemos a todas las secciones (vistas de la app) en display none, de ese modo todo el contendido del html excepto el header y el nav estará oculto. */
+Para resolver la navegabilidad de la app, ponemos a todas las secciones (vistas de la app) en display none, de ese modo todo el 
+contendido del html excepto el header y el nav estará oculto. */
 
 section {
     display: none;
     margin-bottom: 3.5rem;
 }
 
-/* Ahora seleccionamos a la última sección que es la primera vista de la app (lo que sería la home) y le aplicamos display block para que sea la única visible. */
+/* Ahora seleccionamos a la última sección que es la primera vista de la app (lo que sería la home) y le aplicamos display 
+block para que sea la única visible. */
 
 section:last-of-type {
     display: block;
 }
 
-/* Cuando presionamos un botón de la barra de navegación entra en target el span que tiene ese id. Los span están ubicados por fuera de la section correspondiente y antes que ella. 
+/* Cuando presionamos un botón de la barra de navegación entra en target el span que tiene ese id. Los span están ubicados por fuera 
+de la section correspondiente y antes que ella. 
 
-Por lo tanto, cuando cualquiera de estos span entran en target seleccionamos a todas las secciones hermanas y las ponemos display none (ocultamos de nuevo todo el contenido de la app ya que no sabemos cual de las vistas estaba visible al momento de navegar a otra vista). */
+Por lo tanto, cuando cualquiera de estos span entran en target seleccionamos a todas las secciones hermanas y las ponemos display 
+none (ocultamos de nuevo todo el contenido de la app ya que no sabemos cual de las vistas estaba visible al momento de navegar 
+a otra vista). */
 
 #personajes:target ~ section, #pelicula:target ~ section, #temporada:target ~ section {
     display: none;
 }
 
-/* Y por último, seleccionamos solo la section hermana adyacente al span en target y la ponemos display block ya que cada span tiene a continuación la section que tiene el contenido de esa vista a la que el usuario está queriendo navegar.
+/* Y por último, seleccionamos solo la section hermana adyacente al span en target y la ponemos display block ya que cada span 
+tiene a continuación la section que tiene el contenido de esa vista a la que el usuario está queriendo navegar.
 
-De este modo siempre estará en display block solo la section que se esté navegando en ese momento cuando el span correspondiente está en target y al cargar la app, solo visible la última section. */
+De este modo siempre estará en display block solo la section que se esté navegando en ese momento cuando el span correspondiente 
+está en target y al cargar la app, solo visible la última section. */
 
 span:target + section {
     display: block !important;
