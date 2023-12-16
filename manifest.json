@@ -1,7 +1,7 @@
 
 {
     "name": "Melius", 
-     "background-color":"#691b18",
+     "background_color":"#691b18",
     "description": "Es una app con fines académicos.",
     "display": "standalone",
     "lang": "es",
