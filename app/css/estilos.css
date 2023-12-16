@@ -1,5 +1,6 @@
 body {
-    background-color: #72c7e7;
+    background-color: #FCF6DB;
+    font-family: 'Playfair Display', serif;
 }
 
 .bg1 {
@@ -20,6 +21,26 @@ body {
     font-size: 0;
     background: url("../imagenes/logo.png");
     margin: auto;
+}
+
+.present{
+    background-image: url("../imagenes/bg1.png");
+}
+
+.act{
+    background-image: url("../imagenes/bg2.png");
+}
+
+.active{
+    background-image: url("../imagenes/bg3.png");
+}
+
+.comidas{
+    background-image: url("../imagenes/bg4.png");
+}
+
+.contact{
+    background-image: url("../imagenes/bg5.png");
 }
 
 #info {
@@ -99,7 +120,7 @@ Por lo tanto, cuando cualquiera de estos span entran en target seleccionamos a t
 none (ocultamos de nuevo todo el contenido de la app ya que no sabemos cual de las vistas estaba visible al momento de navegar 
 a otra vista). */
 
-#personajes:target ~ section, #pelicula:target ~ section, #temporada:target ~ section {
+#ejercicio:target ~ section, #nosotros:target ~ section, #comida:target ~ section {
     display: none;
 }
 
