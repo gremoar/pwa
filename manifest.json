@@ -9,7 +9,7 @@
     "orientation": "portrait",
     "start_url": "https://gremoar.github.io/pwa/app/index.html",
     "scope": "/app/",
-    "theme_color": "#ff0000",
+    "theme_color": "#6170f7",
     "icons": [
   {
    "src": "iconos/android-icon-36x36.png",
