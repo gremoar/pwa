@@ -7,8 +7,8 @@
  "dir": "ltr",
  "id": "https://gremoar.github.io/pwa/",
  "orientation": "portrait",
- "start_url": "/app/",
- "scope": "/app/",
+ "start_url": "../app/index.html",
+ "scope": "../app/index.html",
  "theme_color": "#ff0000",
  "icons": [
   {
