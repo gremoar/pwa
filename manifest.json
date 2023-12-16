@@ -5,10 +5,10 @@
  "display": "standalone",
  "lang": "es",
  "dir": "ltr",
- "id": "https://gremoar.github.io/pwa/",
+ "id": "ejemplo/pwa",
  "orientation": "portrait",
- "start_url": "./app/index.html",
- "scope": "./app/index.html",
+ "start_url": "https://gremoar.github.io/pwa/app.html",
+ "scope": "https://gremoar.github.io/pwa/app.html",
  "theme_color": "#ff0000",
  "icons": [
   {
