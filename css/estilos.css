@@ -188,7 +188,12 @@ body{
     height: 400px;
     padding-left: 120px;
 }
-
+.texto1{
+    margin: 0;
+}
+.texto2{
+    margin: 0;
+}
 .act{
     background-image: url("../imagenes/bg2\ min.png");
     background-repeat: no-repeat;
