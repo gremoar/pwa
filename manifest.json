@@ -8,7 +8,7 @@
  "id": "ejemplo/pwa",
  "orientation": "portrait",
  "start_url": "https://gremoar.github.io/pwa/app/index.html",
- "scope": "/pwa/",
+ "scope": "/app/",
  "theme_color": "#ff0000",
  "icons": [
   {
