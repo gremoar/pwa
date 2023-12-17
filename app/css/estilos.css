@@ -16,31 +16,89 @@ body {
 }
 
 #logo {
-    width: 134px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     font-size: 0;
     background: url("../imagenes/logo.png");
+    background-repeat: no-repeat;
     margin: auto;
 }
 
 .present{
     background-image: url("../imagenes/bg1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.present img{
+    height: 500px;
 }
 
 .act{
     background-image: url("../imagenes/bg2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .active{
     background-image: url("../imagenes/bg3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .comidas{
     background-image: url("../imagenes/bg4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.contact{
+.formu{
     background-image: url("../imagenes/bg5.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.texto1{
+    margin-top: 30px;
+    
+}
+.texto1 h1{
+    color:#EFEA50;
+    font-size: 100px;
+    margin-left: 20%;
+}
+.texto1 h2{
+    font-size: 45px;
+    margin: 0;
+    text-align: center;
+}
+.texto1 p{
+    font-size: 150px;
+    margin-left: 15%;
+
+}
+
+.texto2 h1{
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+.img1{
+    margin-left: 140px;
+}
+
+.img2{
+    margin-left: 80px;
+    height: 500px;
+}
+
+.card-sizes {
+    max-width: 60%;
 }
 
 #info {
@@ -50,8 +108,10 @@ body {
     color: rgba(255, 255, 255, .7);
 }
 
-/* Tuneamos la barra de navegación pisando las clases del framework para que los botones ocupen todo el ancho del viewport 
-repartiendo es tamaño en partes iguales. */
+.card-size{
+    border-color: transparent;
+    background-color: transparent;
+}
 
 .navbar-nav {
     width: 100%;
@@ -67,7 +127,7 @@ repartiendo es tamaño en partes iguales. */
     padding: 0;
 }
 
-/* Repartimos el ancho de los botones en partes iguales. */
+
 
 .nav-item {
     flex: 1;
@@ -86,49 +146,30 @@ repartiendo es tamaño en partes iguales. */
     height: 3.5rem;
 }
 
-/* Desplazamos el ancla hacia arriba (el span vacío que no ocupa lugar en la pantalla) la misma distancia que tiene de alto el 
-header, de este modo al navegar el ancla no queda el contenido pegado en el top de la ventana sino que queda el ancla y, por lo 
-tanto, el header es el que queda en el top. */
-
 .ancla {
     position: relative;
     top: -4.5rem;
 }
 
-/* A las secciones les aplicamos un margin-bottom del alto del navbar fijo en la parte inferior del viewport para que el contenido no
-quede tapado.
 
-Para resolver la navegabilidad de la app, ponemos a todas las secciones (vistas de la app) en display none, de ese modo todo el 
-contendido del html excepto el header y el nav estará oculto. */
 
 section {
     display: none;
     margin-bottom: 3.5rem;
 }
 
-/* Ahora seleccionamos a la última sección que es la primera vista de la app (lo que sería la home) y le aplicamos display 
-block para que sea la única visible. */
+
 
 section:last-of-type {
     display: block;
 }
 
-/* Cuando presionamos un botón de la barra de navegación entra en target el span que tiene ese id. Los span están ubicados por fuera 
-de la section correspondiente y antes que ella. 
 
-Por lo tanto, cuando cualquiera de estos span entran en target seleccionamos a todas las secciones hermanas y las ponemos display 
-none (ocultamos de nuevo todo el contenido de la app ya que no sabemos cual de las vistas estaba visible al momento de navegar 
-a otra vista). */
 
-#ejercicio:target ~ section, #nosotros:target ~ section, #comida:target ~ section {
+#inicio:target ~ section, #ejercicio:target ~ section, #nosotros:target ~ section, #comida:target ~ section, #contact:target ~ section {
     display: none;
 }
 
-/* Y por último, seleccionamos solo la section hermana adyacente al span en target y la ponemos display block ya que cada span 
-tiene a continuación la section que tiene el contenido de esa vista a la que el usuario está queriendo navegar.
-
-De este modo siempre estará en display block solo la section que se esté navegando en ese momento cuando el span correspondiente 
-está en target y al cargar la app, solo visible la última section. */
 
 span:target + section {
     display: block !important;
@@ -146,19 +187,121 @@ span:target + section {
     border-bottom: 8px solid rgba(0, 0, 0, 0.4);
 }
 
-section:nth-last-of-type(1) .bg-titulo {
-    background: url("../imagenes/icono_historia.png") no-repeat 1rem center rgba(0, 0, 0, .7);
+.formulario{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #c3c1b5b5;
+    border-radius: 20px;
+    text-align: center;
+    width: 520px;
 }
 
-section:nth-last-of-type(2) .bg-titulo {
-    background: url("../imagenes/icono_personajes.png") no-repeat 1rem center rgba(0, 0, 0, .7);
+.card-size{
+    padding: 0;
+    max-width: 20%;
+    align-items: center;
 }
 
-section:nth-last-of-type(3) .bg-titulo {
-    background: url("../imagenes/icono_pelicula.png") no-repeat 1rem center rgba(0, 0, 0, .7);
+.card-size img{
+    height: 100px;
+    width: 200px;
 }
-section:nth-last-of-type(4) .bg-titulo {
-    background: url("../imagenes/icono_temporada.png") no-repeat 1rem center rgba(0, 0, 0, .7);
+
+.txtContact{
+    text-align: center;
+}
+
+.imput{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.titleContact{
+    color:#283629;
+    font-size: 35px;
+}
+
+.tituloForm{
+    color:#283629;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+
+}
+
+.txt{
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    border: 2px solid ;
+    color: #283629;
+    outline: none;
+
+}
+
+.btn{
+    font-size: 16px;
+    color: azure;
+    border: 0;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    cursor:pointer;
+}
+
+.btn:hover{
+    background-color: #283629;
+}
+
+@media(max-width:991px){
+
+
+    .formulario{
+        padding: 50px 30px;
+        width: 100%;
+
+    }
+
+    .txt{
+        padding:15px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px){
+
+    .img1{
+            height: 350px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+    }
+    .img2{
+        height: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .texto1{
+        margin: 0;
+    }
+
+    .texto1 h1{
+        font-size: 70px;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .texto1 h2{
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .texto1 p{
+        font-size: 120px;
+        text-align: center;
+        margin: 0;
+    }
+
 }
 
 #datos .modal-body {

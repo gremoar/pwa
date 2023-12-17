@@ -1,7 +1,6 @@
-
 body {
     background-color: #FCF6DB;
-    font-family: 'Playfair Display', serif; 
+    font-family: 'Playfair Display', serif;
 }
 
 
@@ -11,52 +10,42 @@ body {
 
 .img1{
     height: 705px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 200px;
 }
 
 .img2{
     height: 705px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    padding-left: 250px;
 }
 
 .present{
     background-image: url("../imagenes/bg1.png");
     background-repeat: no-repeat;
     height: 827px;
-    background-position: center;
+    margin: 0 auto;
+    width: 100%;
+
 }
 .act{
     background-image: url("../imagenes/bg2.png");
     background-repeat: no-repeat;
     height: 827px;
-    background-position: center;
 }
 
 .active{
     background-image: url("../imagenes/bg3.png");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
+    
 }
 
 .comidas{
     background-image: url("../imagenes/bg4.png");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
+    
 }
 
 .contact{
     background-image: url("../imagenes/bg5.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 .texto1{
     margin-top: 100px;
@@ -74,14 +63,15 @@ body {
 .texto1 p{
     font-size: 200px;
     margin-left: 45px;
+
 }
 
 .texto2{
-    margin-top: 20px;
+    margin-top: 70px;
 }
 
 .texto2 h1{
-    font-size: 80px;
+    font-size: 100px;
     white-space: nowrap;
 }
 .texto2 h2{
@@ -106,18 +96,15 @@ strong{
     z-index: 1;
 }
 
-.txtContact{
-    text-align: center;
+.navbar-nav{
+    position: relative;
 }
-
 .formulario{
-    align-items: center;
     padding: 50px 55px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    background-color: #c3c1b5b5;
     border-radius: 20px;
     text-align: center;
-    width: 100%;
+    width: 340px;
 }
 
 .imput{
@@ -136,6 +123,7 @@ strong{
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 15px;
+
 }
 
 .txt{
@@ -145,51 +133,54 @@ strong{
     border: 2px solid ;
     color: #283629;
     outline: none;
+
 }
 
-.Iconos{
-    height: 200px;
-    width: 200px;
-    position:relative;
-    left: 180px;
-    margin-left: 100px; 
+.txt::placeholder{
+    color: blueviolet;
+
 }
 
-.iconoss{
+.btn{
+    font-size: 16px;
+    color: azure;
+    border: 0;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    cursor:pointer;
+}
+
+.btn:hover{
+    background-color: #283629;
+}
+
+.formCent{
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
     display: flex;
-    padding-left: 10%;
-}
-
-.card-sizes{
-    border-color: transparent;
-    background-color: transparent;
-
-}
-
-.navbar-nav{
-    position: relative;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 991px) {
     #logo {
-        left: calc(50% - 50px);
+        left: calc(50% - 67px);
     }
-
     .nav-item {
         background: rgba(255, 255, 255, .1);
         margin: 1rem 0;
     }
-
     .nav-item:first-child{
         margin-top: 2rem;
     }
-
     .nav-item:hover {
         background: rgba(0, 0, 0, .1);
+        
     }
 
     .formulario{
         padding: 50px 30px;
+        width: 100%;
 
     }
 
@@ -197,24 +188,16 @@ strong{
         padding:15px;
     }
 }
-@media screen and (min-width: 576px) and (max-width: 992px){
+@media (max-width: 1080px){
 
     .img1{
         height: 400px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        padding-left: 300px;
     }
 
     .img2{
         height: 400px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .texto1{
-        margin: 0;
+        padding-left: 200px;
     }
 
     .texto1 h1{
@@ -244,97 +227,24 @@ strong{
         margin-left: 130px;
         margin: 0;
     }
-   .card-size {
+.card-size {
     max-width: 50%;
-   }
-   
 }
-@media screen and (min-width: 320px) and (max-width: 575px){
-    #logo {
-        left: calc(50% - 44px);
+}
+@media (max-width: 615px){
+
+    .img1{
+        height: 350px;
+        padding-left: 220px;
     }
-body{
-  width: 100%;
-}
-.img1{
-    height: 350px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.img2{
-    height: 400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.texto1{
-    margin: 0;
-}
-.texto2 {
-    margin: 0;
-}
-.texto1 h1{
-    font-size: 70px;
-    text-align: center;
-    margin: 0;
-}
+    .img2{
+        height: 350px;
+        padding-left: 200px;
+    }
 
-.texto1 h2{
-    font-size: 40px;
-    text-align: center;
-}
-
-.texto1 p{
-    font-size: 120px;
-    text-align: center;
-    margin: 0;
-}
-
-.texto2 h1{
-    font-size: 40px;
-    text-align: center;
-    margin-left: 10px;
-}
-.texto2 h2{
-    font-size: 25px;
-    margin-left: 20px;
 
 }
-.act{
-    background-image: url("../imagenes/bg2\ min.png");
-    background-repeat: no-repeat;
-    height: 827px;
-    width: 100%;
-
-}
-
-.active{
-    background-image: url("../imagenes/bg3\ min.png");
-    background-repeat: no-repeat;
-    width: 100%;
-
-    
-}
-
-.comidas{
-    background-image: url("../imagenes/bg4\ min.png");
-    background-repeat: no-repeat;
-    width: 100%;
-
-    
-}
-.contact{
-    width: 100%;
-}
-.iconoss{
-    display: flex;
-    padding-left: 0;
-    width: 100%;
-}
-}
-
 .navbar-toggler {
     border: none;
 }
@@ -358,6 +268,22 @@ body{
     line-height: 4.3rem;
     border-bottom: 8px solid rgba(0, 0, 0, 0.4);
 }
+
+section:nth-of-type(2) .bg-titulo {
+    background: url("../app/imagenes/icono_historia.png") no-repeat 1rem center rgba(0, 0, 0, .7);
+}
+
+section:nth-of-type(3) .bg-titulo {
+    background: url("../app/imagenes/icono_personajes.png") no-repeat 1rem center rgba(0, 0, 0, .7);
+}
+
+section:nth-of-type(4) .bg-titulo {
+    background: url("../app/imagenes/icono_pelicula.png") no-repeat 1rem center rgba(0, 0, 0, .7);
+}
+section:nth-of-type(5) .bg-titulo {
+    background: url("../app/imagenes/icono_temporada.png") no-repeat 1rem center rgba(0, 0, 0, .7);
+}
+
 
 .ancla {
     position: relative;
