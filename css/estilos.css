@@ -11,40 +11,51 @@ body {
 
 .img1{
     height: 705px;
-    padding-left: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .img2{
     height: 705px;
-    padding-left: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .present{
     background-image: url("../imagenes/bg1.png");
     background-repeat: no-repeat;
     height: 827px;
-
+    background-position: center;
 }
 .act{
     background-image: url("../imagenes/bg2.png");
     background-repeat: no-repeat;
     height: 827px;
+    background-position: center;
 }
 
 .active{
     background-image: url("../imagenes/bg3.png");
     background-repeat: no-repeat;
-    
+    background-position: center;
+    background-size: cover;
+
 }
 
 .comidas{
     background-image: url("../imagenes/bg4.png");
     background-repeat: no-repeat;
-    
+    background-position: center;
+    background-size: cover;
+
 }
 
 .contact{
     background-image: url("../imagenes/bg5.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .texto1{
     margin-top: 100px;
@@ -62,15 +73,14 @@ body {
 .texto1 p{
     font-size: 200px;
     margin-left: 45px;
-
 }
 
 .texto2{
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 .texto2 h1{
-    font-size: 100px;
+    font-size: 80px;
     white-space: nowrap;
 }
 .texto2 h2{
@@ -117,16 +127,24 @@ strong{
         
     }
 }
-@media (max-width: 1080px){
+@media (max-width: 992px){
 
     .img1{
         height: 400px;
-        padding-left: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .img2{
         height: 400px;
-        padding-left: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .texto1{
+        margin: 0;
     }
 
     .texto1 h1{
@@ -159,20 +177,23 @@ strong{
    .card-size {
     max-width: 50%;
    }
+   
 }
 @media (max-width: 615px){
 
     .img1{
         height: 350px;
-        padding-left: 220px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .img2{
         height: 350px;
-        padding-left: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
-
-
 }
 @media (max-width: 525px){
 
@@ -181,12 +202,16 @@ body{
 }
 .img1{
     height: 350px;
-    padding-left: 130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .img2{
     height: 400px;
-    padding-left: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .texto1{
     margin: 0;
@@ -212,13 +237,12 @@ body{
 }
 
 .texto2 h1{
-    font-size: 50px;
-    white-space: nowrap;
+    font-size: 40px;
     text-align: center;
     margin-left: 10px;
 }
 .texto2 h2{
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 20px;
 
 }
