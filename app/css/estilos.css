@@ -31,10 +31,6 @@ body {
     background-size: cover;
 }
 
-.present img{
-    height: 300px;
-}
-
 .act{
     background-image: url("../imagenes/bg2.png");
     background-position: center;
@@ -268,6 +264,12 @@ span:target + section {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    }
+    .img3{
+        width: 170px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
     .texto1{
         margin: 0;
