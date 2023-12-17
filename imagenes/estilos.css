@@ -1,7 +1,6 @@
-
 body {
     background-color: #FCF6DB;
-    font-family: 'Playfair Display', serif; 
+    font-family: 'Playfair Display', serif;
 }
 
 
@@ -23,6 +22,8 @@ body {
     background-image: url("../imagenes/bg1.png");
     background-repeat: no-repeat;
     height: 827px;
+    margin: 0 auto;
+    width: 100%;
 
 }
 .act{
@@ -160,96 +161,6 @@ strong{
     max-width: 50%;
    }
 }
-@media (max-width: 615px){
-
-    .img1{
-        height: 350px;
-        padding-left: 220px;
-    }
-
-    .img2{
-        height: 350px;
-        padding-left: 200px;
-    }
-
-
-}
-@media (max-width: 525px){
-
-body{
-  width: 100%;
-}
-.img1{
-    height: 350px;
-    padding-left: 130px;
-}
-
-.img2{
-    height: 400px;
-    padding-left: 80px;
-}
-.texto1{
-    margin: 0;
-}
-.texto2 {
-    margin: 0;
-}
-.texto1 h1{
-    font-size: 70px;
-    text-align: center;
-    margin: 0;
-}
-
-.texto1 h2{
-    font-size: 40px;
-    text-align: center;
-}
-
-.texto1 p{
-    font-size: 125px;
-    text-align: center;
-    margin: 0;
-}
-
-.texto2 h1{
-    font-size: 50px;
-    white-space: nowrap;
-    text-align: center;
-    margin-left: 10px;
-}
-.texto2 h2{
-    font-size: 30px;
-    margin-left: 20px;
-
-}
-.act{
-    background-image: url("../imagenes/bg2\ min.png");
-    background-repeat: no-repeat;
-    height: 827px;
-    width: 100%;
-
-}
-
-.active{
-    background-image: url("../imagenes/bg3\ min.png");
-    background-repeat: no-repeat;
-    width: 100%;
-
-    
-}
-
-.comidas{
-    background-image: url("../imagenes/bg4\ min.png");
-    background-repeat: no-repeat;
-    width: 100%;
-
-    
-}
-.contact{
-    width: 100%;
-}
-}
-
 .navbar-toggler {
     border: none;
 }
