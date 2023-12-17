@@ -32,12 +32,11 @@ body {
 }
 
 .present img{
-    height: 500px;
+    height: 300px;
 }
 
 .act{
     background-image: url("../imagenes/bg2.png");
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -109,9 +108,13 @@ body {
 }
 
 .card-size{
+    padding: 0;
+    max-width: 20%;
+    align-items: center;
     border-color: transparent;
     background-color: transparent;
 }
+
 
 .navbar-nav {
     width: 100%;
@@ -196,17 +199,6 @@ span:target + section {
     width: 520px;
 }
 
-.card-size{
-    padding: 0;
-    max-width: 20%;
-    align-items: center;
-}
-
-.card-size img{
-    height: 100px;
-    width: 200px;
-}
-
 .txtContact{
     text-align: center;
 }
@@ -247,10 +239,6 @@ span:target + section {
     border-radius: 25px;
     box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
     cursor:pointer;
-}
-
-.btn:hover{
-    background-color: #283629;
 }
 
 @media(max-width:991px){
@@ -301,7 +289,20 @@ span:target + section {
         text-align: center;
         margin: 0;
     }
+    .navbar-expand .navbar-nav .nav-link{
+        padding: 0;
+    }
 
+    .card-size{
+        max-width: 15%;
+    }
+    .ms-4{
+        margin-left: -12px !important;
+        justify-content: center;
+    }
+    .card-sizes{
+        max-width: 100%;
+    }
 }
 
 #datos .modal-body {
